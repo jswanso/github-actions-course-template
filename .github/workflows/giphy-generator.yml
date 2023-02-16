@@ -6,11 +6,11 @@ on:
     types: [opened, edited]
   issue_comment:
     types: [created, edited]
- 
- jobs:
+    
+jobs:
   giphy-generator:
     runs-on: ubutune-latest
-    
+
     steps:
       - name: GIPHY Generator
         uses: IAmHughes/giphy-generator@v1.0.0
@@ -20,4 +20,3 @@ on:
         with:
           rating: 'g'
           lang: 'en'
-
